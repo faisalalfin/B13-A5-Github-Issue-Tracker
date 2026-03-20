@@ -32,6 +32,39 @@
       <p class="text-[#64748B]">Sign in to manage your issues</p>
     </div>
 
-    
+    <div class="form pt-1">
+      <div class="card bg-base-100 w-full max-w-md shrink-0 mx-auto">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label font-medium text-base text-neutral">Username</label>
+            <input minlength="5" maxlength="16" type="name" class="input w-full" placeholder="Enter Username" />
+            <div>
+              <p class="text-primary text-sm">Default: admin</p>
+            </div>
+            <label class="label font-medium text-base text-neutral pt-2"
+              >Password</label
+            >
+            <input maxlength="12" type="password" class="input w-full" placeholder="Enter Password" />
+            <div>
+              <p class="text-primary text-sm">Default: admin123</p>
+            </div>
+            <button class="btn btn-primary mt-4">Sign In</button>
+            <div
+              class="divider text-gray-400 before:bg-gray-300 after:bg-gray-300"
+            >
+              <h3 class="text-neutral text-lg">OR</h3>
+            </div>
+
+            <div class="text-center text-sm">
+              <p>Demo Credentials:</p>
+              <div class="bg-base-200 py-3 rounded-md mt-1">
+                <h3><span class="font-bold">Username:</span> admin</h3>
+                <h3><span class="font-bold">Password:</span> admin123</h3>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
