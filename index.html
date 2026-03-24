@@ -6,7 +6,6 @@
     <title>Document</title>
 
     <!-- font -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +14,6 @@
     />
 
     <!-- tailwind + daisyUI -->
-
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -23,49 +21,82 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="min-h-96 max-w-md mx-auto my-8 shadow-md rounded-md">
-    <div class="logo w-[80px] mx-auto pt-8">
-      <img src="./assets/github-logo.png"alt="" />
-    </div>
-    <div class="text-center pt-6">
-      <h2 class="font-semibold text-2xl">GitHub Issues Tracker</h2>
-      <p class="text-[#64748B]">Sign in to manage your issues</p>
-    </div>
 
-    <div class="form pt-1">
-      <div class="card bg-base-100 w-full max-w-md shrink-0 mx-auto">
-        <div class="card-body">
-          <fieldset class="fieldset">
-            <label class="label font-medium text-base text-neutral">Username</label>
-            <input id="input-name" minlength="5" maxlength="16" type="name" class="input w-full" placeholder="Enter Username" />
-            <div>
+  <body
+    class="min-h-screen flex items-center justify-center bg-base-200 px-4 overflow-hidden"
+  >
+    <!-- main container -->
+    <div class="w-full max-w-md bg-base-100 shadow-md rounded-md py-6">
+      <div class="logo w-[70px] sm:w-[80px] mx-auto pt-2">
+        <img src="./assets/github-logo.png" alt="" />
+      </div>
+
+      <div class="text-center pt-4">
+        <h2 class="font-semibold text-xl sm:text-2xl">GitHub Issues Tracker</h2>
+
+        <p class="text-[#64748B] text-sm sm:text-base">
+          Sign in to manage your issues
+        </p>
+      </div>
+
+      <div class="form pt-2">
+        <div class="card bg-base-100 w-full shrink-0 mx-auto">
+          <div class="card-body py-4 px-5">
+            <fieldset class="fieldset">
+              <label class="label font-medium text-base text-neutral">
+                Username
+              </label>
+
+              <input
+                id="input-name"
+                minlength="5"
+                maxlength="16"
+                type="name"
+                class="input w-full"
+                placeholder="Enter Username"
+              />
+
               <p class="text-primary text-sm">Default: admin</p>
-            </div>
-            <label class="label font-medium text-base text-neutral pt-2"
-              >Password</label
-            >
-            <input id="input-pass" maxlength="12" type="password" class="input w-full" placeholder="Enter Password" />
-            <div>
-              <p class="text-primary text-sm">Default: admin123</p>
-            </div>
-            <button id="login-btn" class="btn btn-primary mt-4">Sign In</button>
-            <div
-              class="divider text-gray-400 before:bg-gray-300 after:bg-gray-300"
-            >
-              <h3 class="text-neutral text-lg">OR</h3>
-            </div>
 
-            <div class="text-center text-sm">
-              <p>Demo Credentials:</p>
-              <div class="bg-base-200 py-3 rounded-md mt-1">
-                <h3><span class="font-bold">Username:</span> admin</h3>
-                <h3><span class="font-bold">Password:</span> admin123</h3>
+              <label class="label font-medium text-base text-neutral pt-2">
+                Password
+              </label>
+
+              <input
+                id="input-pass"
+                maxlength="12"
+                type="password"
+                class="input w-full"
+                placeholder="Enter Password"
+              />
+
+              <p class="text-primary text-sm">Default: admin123</p>
+
+              <button id="login-btn" class="btn btn-primary mt-4 w-full">
+                Sign In
+              </button>
+
+              <div
+                class="divider text-gray-400 before:bg-gray-300 after:bg-gray-300"
+              >
+                <h3 class="text-neutral text-base">OR</h3>
               </div>
-            </div>
-          </fieldset>
+
+              <div class="text-center text-sm">
+                <p>Demo Credentials:</p>
+
+                <div class="bg-base-200 py-3 rounded-md mt-1">
+                  <h3><span class="font-bold">Username:</span> admin</h3>
+
+                  <h3><span class="font-bold">Password:</span> admin123</h3>
+                </div>
+              </div>
+            </fieldset>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="./script/login.js"></script>
   </body>
 </html>

@@ -1,11 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>This is the Homepage</h1>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind + daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+<body class="min-h-screen bg-base-200">
+
+<!-- Navbar -->
+<div class="navbar bg-base-100 shadow-sm px-3 sm:px-6">
+
+  <!-- Left -->
+  <div class="navbar-start flex items-center gap-2">
+
+    <img src="./assets/github-logo.png"
+    class="w-8 sm:w-10"
+    alt="">
+
+    <a class="btn btn-ghost text-sm sm:text-lg md:text-xl px-1 sm:px-3">
+      GitHub Issues Tracker
+    </a>
+
+  </div>
+
+  <!-- Right -->
+  <div class="navbar-end gap-3">
+
+    <input 
+      type="text" 
+      placeholder="Search issues..." 
+      class="input input-bordered w-24 sm:w-40 md:w-64 h-9 sm:h-10 text-sm"
+    />
+
+    <button class="btn btn-primary"><span><i class="fa-solid fa-plus"></i></span>New Issue</button>
+
+  </div>
+
+</div>
+
+<script src="./script/login.js"></script>
+
 </body>
 </html>
